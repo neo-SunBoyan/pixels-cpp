@@ -28,7 +28,6 @@ PixelsRecordReaderImpl::PixelsRecordReaderImpl(std::shared_ptr<PhysicalReader> r
     RGStart = option.getRGStart();
     RGLen = option.getRGLen();
     batchSize = option.getBatchSize();
-    enabledFilterPushDown = option.isEnabledFilterPushDown();
     everRead = false;
 	everPrepareRead = false;
     targetRGNum = 0;
